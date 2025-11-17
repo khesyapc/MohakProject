@@ -60,7 +60,7 @@ setInterval(() => {
 // COUNTDOWN
 // ======================================================
 const timer = document.getElementById("timer");
-const targetDate = new Date("Nov 18, 2025 00:54:00").getTime();
+const targetDate = new Date("Nov 18, 2025 02:40:00").getTime();
 
 let countdown = setInterval(() => {
   const now = Date.now();
@@ -232,3 +232,4 @@ document.addEventListener("click", (e) => {
     }, 100);
   }
 });
+
