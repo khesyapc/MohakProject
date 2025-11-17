@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Music Player</title>
+  <style>
+    body {
+      background: linear-gradient(45deg, #ffb6c1, #ffe6f2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #d63384;
+      text-align: center;
+    }
+    h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff66b2; }
+      to { text-shadow: 0 0 20px #ff99cc; }
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      background: #ff66b2;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #ff3385;
+    }
+  </style>
+</head>
+<body>
+  <h3>💖 Love Music Sedang Berjalan 💖</h3>
+  <audio id="loveMusic" autoplay loop controls style="width: 250px;">
+    <source src="music/lagu.mp3" type="audio/mp3">
+    Browser kamu tidak mendukung audio.
+  </audio>
+  <button onclick="window.close()">Tutup Musik 💕</button>
+</body>
+</html>
+

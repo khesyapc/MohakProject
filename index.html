@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khesya & Tania Forever in Love 💖</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Lobster&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="video/bg.mp4" type="video/mp4">
+  </video>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo">
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#" onclick="showPage('home')">Home</a></li>
+      <li><a href="album.html" target="_blank">Album</a></li>
+      <li><a href="#" onclick="showPage('countdown')">Countdown</a></li>
+      <li><a href="#" onclick="showPage('pesan')">Pesan</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="home-section">
+    <div class="title-box">
+      <h1 class="main-title">KHESYA & TANIA FOREVER IN LOVE</h1>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section id="countdown" class="countdown-section">
+    <h2>Menuju Ulang Tahunmu, Sayang ❤️</h2>
+    <div id="timer" class="timer-text"></div>
+  </section>
+
+  <!-- ALBUM -->
+  <section id="album" class="album-section">
+    <h2>RANDOM PHOTO</h2>
+
+    <div class="slideshow-container">
+      <div class="slide fade"><img src="img/foto1.jpg"></div>
+      <div class="slide fade"><img src="img/foto2.jpg"></div>
+      <div class="slide fade"><img src="img/foto3.jpg"></div>
+      <div class="slide fade"><img src="img/foto4.jpg"></div>
+      <div class="slide fade"><img src="img/foto5.jpg"></div>
+      <div class="slide fade"><img src="img/foto6.jpg"></div>
+      <div class="slide fade"><img src="img/foto7.jpg"></div>
+    </div>
+  </section>
+
+  <!-- PESAN -->
+  <section id="pesan" class="pesan-section">
+    <button class="love-button">💌 Pesan Cinta</button>
+  </section>
+
+  <!-- Confetti -->
+  <canvas id="confetti"></canvas>
+
+  <!-- SCRIPT UTAMA -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
